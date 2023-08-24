@@ -101,5 +101,4 @@ nih visualnya
 Selamat mencoba, jangan cepet nyerah ngertiin logikanya emang susah cuman gw dah simplein isinya harus nya lu pada ngerti yak semangat-semangat
 
 
-## Who am i
-ANugrah Gilang Ramadhan
+

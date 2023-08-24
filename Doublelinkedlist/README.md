@@ -41,7 +41,7 @@ Logika dari create data yaitu ketika semua nya masih null, atau belum ada data d
 Karena belum ada data jadi logikanya kita bakal isi data pertama kali, dimana data itu pasti bakal jadi head sekaligus tail nya. Nah gini lu mesti inget dalam setiap node itu ada next dan prev, tapi di head prev nya null dan di tail next nya null gitu aja. Jadi gini coba deh lu liat code nya. Hal pertama itu lu buat dulu/inisialisasi Node baru yang menandakan bakal ada node yang ditambah nih gitu, nah katakanlah namanya newnode. Cara inisialisasi liat code nya aja ya.
 Contoh visual nya gimana gini :
 
-![visual2](/img/1b.png)
+![visual2](./img/1b.png)
 
 Nah jadi bukan ujung kiri kepala dan ujung kanan kaki nya ya, jadi maksudnya di satu Node udah sekaligus jadi kepala + kaki nya. head sama tail nya maksud gw.
 
@@ -49,7 +49,7 @@ Nah jadi bukan ujung kiri kepala dan ujung kanan kaki nya ya, jadi maksudnya di 
 > add first
 Nah logika disini harus main, kalo kita mau nambahin data ke awal banget artinya sebagai head dong ya, nah berarti data first yang kita buat sebelumnya kegeser dan ngga jadi head lagi. Best jalur lu ngertinya gini `tambah node > kaitkan newnode.next nya ke first data tadi, nah kaitkan head.prev ke newnode supaya dia jadi tail nantinya, dan newnode jadi head` kalo belum kebayang liat gambar ini visualnya sambil liat code juga ya.
 
-![visual2](/img/2.png)
+![visual2](./img/2.png)
 
 Alurnya udah jelas ya tinggal try hard ngertiin dan coba aja.
 
@@ -58,25 +58,25 @@ Sama sebenernya kayak add first cuman yang lu mainin adalah bagian belakang/tail
 
 Nih visualnya biar kebayang
 
-![visual2](/img/3.png)
+![visual2](./img/3.png)
 
 ## add middle
 add middle sebenernya konsep nya sama, cuman disini kita butuh satu curent node sebagai penghitung buat si ke posisi yang mau kita ubah. Simple nya gini, pertama buat node baru namanya curent, nah isi si curent ini dengan head `node curent = head` agar si curent nge duplicate head, bukan ganti head ya, cuman duplicate posisi, abis tu kalian looping sampai sebelum posisi, kenapa ? tujuannya karena kita bakal ubah diantara sebelum posisi dan di posisi yang kita ubah, gini misal mau ubah data 3 artinya nambah data nya di antara 2 dan 3 dong, bukan di 3 nya. Buat logikanya ada di code nya ya, nah visualnya gini
 
-![visual2](/img/3b.png)
+![visual2](./img/3b.png)
 
 ## delete first, last, middle
 Konsep delete sih sama aja ya, mainin node.next sama node.prev nya aja. Gini misal hapus di awal artinya head.next yang bakal jadi head kan ? iya ga ? so logika delete first itu `head = head.next, head.tail = null`
 
 visualnya gini :
 
-![visual2](/img/4.png)
+![visual2](./img/4.png)
 
 kalo last gimana ? ya tinggal gini `tail = tail.prev` karena yang bakal jadi tail adalah sebelum si tail yang bakal dihapus, terus tinggal `tail.next = null` dah gitu doang.
 
 visualnya gini :
 
-![visual2](/img/5.png)
+![visual2](./img/5.png)
 
 delete middle ? nah ini konsep nya hampir sama kek add middle tapi yang perlu lu perhatiin itu adalah lagi-lagi prev dan next nya, konsep nya adalah sama lu buat curent isinya head terus lanjut kek gini :
 ```
@@ -91,9 +91,9 @@ nah itu ada node del, fungsinya supaya ada singgahan biar data nya ga putus gitu
 
 nih visualnya
 
-![visual2](/img/6.png)
+![visual2](./img/6.png)
 
-![visual2](/img/7.png)
+![visual2](./img/7.png)
 
 
 ## last but not least

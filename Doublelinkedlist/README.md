@@ -1,4 +1,4 @@
-<img width="463" alt="image" src="https://github.com/Langhere/Java-Algoritm-Data-and-Structure/assets/142018203/0225a1f5-d692-4f59-8a83-a4a5a6877350">## Getting Started
+## Getting Started
 
 Welcome to the Double Linked List, i will explain you about this material. 
 
@@ -23,6 +23,7 @@ Apa itu double linked list ? Doubly Linked List (atau daftar berantai dua arah) 
 Jadi secara sederhana double linked list bakal nyambungin data perdata yang kalian masukin atau kalian input sesuai dengan keinginan kalian naruhnya dimana, dan satu sama lain data itu terhubung. Secara teknis tempet data ditaruh tu disebut node ya.
 Nah jadi di double linked list itu ada dua hal yang harus kalian pahamin, penting. Jadi dalam setiap node pasti memiliki 2 petunjuk arah, yaitu Node next dan Node previous. Buat lebih ngerti liat ni visualnya :
 
+
 ![visual](./img/1.png)
 
 Nah ada beberapa yang perlu kalian latih buat mahamin ini. Cara paling gampang yaitu CD, atau Create Delete. Dengan ini kalian
@@ -38,7 +39,8 @@ Ikutin aja proses nya ntar jg lu paham gimana gw mainin proses nya. Nah untuk co
 Logika dari create data yaitu ketika semua nya masih null, atau belum ada data dan node dalam wadah yang bakal kita isi. Gambarannya gini, kalian punya ember, tapi kalian belom ngisi air nya sama sekali. Nah buat di dalam codingan foldernya di `/src/myclass/doublelinkedlist` kalian bisa liat ada function create first data. 
 > Penjelasan
 Karena belum ada data jadi logikanya kita bakal isi data pertama kali, dimana data itu pasti bakal jadi head sekaligus tail nya. Nah gini lu mesti inget dalam setiap node itu ada next dan prev, tapi di head prev nya null dan di tail next nya null gitu aja. Jadi gini coba deh lu liat code nya. Hal pertama itu lu buat dulu/inisialisasi Node baru yang menandakan bakal ada node yang ditambah nih gitu, nah katakanlah namanya newnode. Cara inisialisasi liat code nya aja ya.
-> Contoh visual nya gimana gini :
+Contoh visual nya gimana gini :
+
 ![visual2](/img/1b.png)
 
 Nah jadi bukan ujung kiri kepala dan ujung kanan kaki nya ya, jadi maksudnya di satu Node udah sekaligus jadi kepala + kaki nya. head sama tail nya maksud gw.
